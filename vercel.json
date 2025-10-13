@@ -1,0 +1,12 @@
+{
+  "rewrites": [{ "source": "/admin", "destination": "/admin/index.html" }],
+  "headers": [
+    {
+      "source": "/admin/config.yml",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Content-Type", "value": "text/yaml" }
+      ]
+    }
+  ]
+}
