@@ -1,0 +1,2 @@
+/admin/*
+  Content-Security-Policy: script-src 'self' https://unpkg.com; object-src 'none'; base-uri 'self';
