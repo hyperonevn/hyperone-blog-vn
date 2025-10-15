@@ -8,10 +8,10 @@ public_folder: "/images/uploads"          # đường dẫn public để hiển 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "data/blog"                   # 🔥 trỏ đúng tới thư mục chứa bài viết
+    folder: "data/blog"                   # trỏ đúng thư mục chứa bài viết
     create: true
     slug: "{{slug}}"
-    extension: "dmx"                      # nếu bạn dùng file .dmx
+    extension: "mdx"                      # đúng định dạng bạn đang dùng
     format: "frontmatter"
     fields:
       - { label: "Title", name: "title", widget: "string" }
