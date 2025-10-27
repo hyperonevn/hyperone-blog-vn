@@ -1,0 +1,23 @@
+---
+title: 'Thách thức trong phân tích chủ đề dài với mô hình mới không tuần tự'
+date: '2017-11-22'
+tags: ['AI', 'CÔNG-NGHỆ']
+draft: false
+summary: 'Transformer giúp xử lý chuỗi nhanh hơn nhưng việc duy trì chủ thể luận quá dài vẫn còn nhiều giới hạn trong năm 2017.'
+---
+
+## 1. Vấn đề đang được chú ý
+
+Dù Self-attention hỗ trợ giữ mối quan hệ xa, nhưng khi văn bản kéo dài hàng ngàn từ, việc xác định đâu là yếu tố quan trọng vẫn chưa ổn định. Tín hiệu chú ý có thể phân tán, làm giảm độ tập trung của mô hình.
+
+## 2. Các thí nghiệm ban đầu
+
+Khi thử nghiệm trên những đoạn văn dài mang nội dung nhiều lớp ý nghĩa, mô hình có xu hướng nắm tốt các thông tin cục bộ. Tuy nhiên việc bảo tồn cấu trúc lập luận tổng thể theo thời gian vẫn khó khăn.
+
+## 3. Những giới hạn nhận thức
+
+Chưa xác định rõ cơ chế nào đảm bảo sự liên tục của luận điểm trong các tài liệu dài. Cũng chưa có bằng chứng chắc chắn rằng cơ chế chú ý hiểu được vai trò của từng đoạn trong lập luận.
+
+## 4. Kết luận
+
+Transformer là hướng đi đáng chú ý để vượt qua giới hạn độ dài của RNN. Nhưng trong giai đoạn này, mô hình vẫn cần thêm nhiều nghiên cứu để chứng minh khả năng nắm bắt được chủ đề kéo dài một cách nhất quán.
