@@ -1,0 +1,30 @@
+---
+title: 'ALBERT – Nén mô hình nhưng không giảm trí tuệ'
+date: '2019-09-26'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '1. Vấn đề đặt ra năm 2019'
+---
+
+# ALBERT – Nén mô hình nhưng không giảm trí tuệ
+
+1. Vấn đề đặt ra năm 2019
+Mô hình ngày càng lớn → khó áp dụng doanh nghiệp: GPU đắt đỏ, độ trễ tăng cao. Google thiết kế ALBERT với sứ mệnh: **giảm tham số – giữ hiệu năng**.
+
+2. Chiến lược kỹ thuật
+ALBERT sử dụng 2 ý tưởng chính:
+- **Factorized Embedding**: tách embedding thành hai ma trận nhỏ → giảm mạnh tham số
+- **Cross-layer weight sharing**: chia sẻ trọng số giữa các lớp Transformer
+Nhờ đó, ALBERT-base chỉ còn ~12M tham số, so với 110M của BERT-base.
+
+3. Thử nghiệm năm 2019
+ALBERT **đứng top GLUE** và **SQuAD** thời điểm công bố.
+Điều này chứng minh mô hình **không cần quá lớn** để mạnh mẽ.
+
+4. Hạn chế chưa giải được
+- Weight sharing làm giảm tính linh hoạt giữa các tầng
+- Khi mở rộng tác vụ sinh văn bản → hiệu năng chưa vượt GPT-2
+- Chưa giải bài toán interpretability
+
+5. Ý nghĩa thực tế
+ALBERT là mô hình đầu tiên khiến cộng đồng xem “tối ưu tài nguyên” là hướng phát triển thay vì chỉ đua kích thước.

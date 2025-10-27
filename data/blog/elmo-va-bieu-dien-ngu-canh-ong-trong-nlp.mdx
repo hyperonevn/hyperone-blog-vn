@@ -1,0 +1,19 @@
+---
+title: 'ELMo và biểu diễn ngữ cảnh động trong NLP'
+date: '2018-02-15'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: 'ELMo (Embeddings from Language Models) xuất hiện đầu năm 2018 đã tạo ra một bước ngoặt trong cách cộ'
+---
+
+# ELMo và biểu diễn ngữ cảnh động trong NLP
+
+ELMo (Embeddings from Language Models) xuất hiện đầu năm 2018 đã tạo ra một bước ngoặt trong cách cộng đồng NLP hiểu về ngôn ngữ tự nhiên. Trước đây, phần lớn mô hình dựa trên biểu diễn từ tĩnh như Word2Vec và GloVe: mỗi từ được ánh xạ thành một vector cố định. Điều này gây hạn chế nghiêm trọng trong những trường hợp từ có nhiều nghĩa khác nhau tùy theo ngữ cảnh, ví dụ từ “bank” có thể là “ngân hàng” hoặc “bờ sông”.
+
+ELMo giải quyết vấn đề này bằng cách xây dựng biểu diễn ngữ cảnh động, trong đó vector của từ được sinh ra bởi mô hình ngôn ngữ hai chiều dựa trên LSTM. Biểu diễn của từ trong câu thay đổi tùy theo vị trí, cấu trúc, và ngữ nghĩa xung quanh nó. Kết quả là mô hình có khả năng hiểu sâu hơn những sắc thái tinh tế của ngôn ngữ: mỉa mai, nghĩa phụ, tân ngữ — điều vốn khó khăn với mô hình tĩnh.
+
+Thử nghiệm trên nhiều tác vụ như gán nhãn thực thể, phân tích cảm xúc, trả lời câu hỏi… cho thấy chỉ cần thêm ELMo vào mô hình cũ là điểm số tăng mạnh mẽ. Điều này khẳng định rằng biểu diễn ngữ cảnh động vốn đã là phần kiến thức thiếu trong NLP truyền thống.
+
+Tuy nhiên, hạn chế tại 2018 vẫn còn rõ ràng. ELMo phụ thuộc vào LSTM nên tốc độ chậm, chi phí huấn luyện và suy luận cao khiến việc triển khai thực tế gặp nhiều khó khăn. Ngoài ra, cộng đồng vẫn chưa giải được bài toán mô hình lớn cần dữ liệu và compute khổng lồ.
+
+Dù vậy, ELMo mở ra cánh cửa dẫn đến một thế hệ mô hình tiền huấn luyện mạnh hơn. Tư tưởng “ngữ cảnh quyết định nghĩa từ” từ đây trở thành nền tảng trong NLP hiện đại.

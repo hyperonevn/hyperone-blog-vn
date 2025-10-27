@@ -1,0 +1,24 @@
+---
+title: 'Adapter Tuning – Fine-tune rẻ hơn thời kỷ nguyên mô hình lớn'
+date: '2020-05-20'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '1. Nhu cầu'
+---
+
+# Adapter Tuning – Fine-tune rẻ hơn thời kỷ nguyên mô hình lớn
+
+1. Nhu cầu
+Mô hình large-scale quá nặng để fine-tune riêng cho từng khách hàng. Doanh nghiệp cần cách tùy chỉnh rẻ hơn.
+
+2. Cơ chế Adapter
+Thay vì cập nhật toàn bộ trọng số, chỉ thêm các module adapter nhỏ vào giữa layers Transformer. Khi fine-tune, chỉ update adapter → tiết kiệm compute, tiết kiệm bộ nhớ.
+
+3. Giá trị 2020
+Giảm hàng chục lần chi phí tùy chỉnh, đặc biệt hữu ích khi cần multi-task hoặc multi-tenant. Một mô hình gốc phục vụ nhiều khách hàng chỉ bằng set adapter khác nhau.
+
+4. Hạn chế
+Hiệu năng hơi kém hơn fine-tune full weights trong tác vụ phức tạp. Quản lý hàng trăm adapter là bài toán mới.
+
+5. Ý nghĩa
+Adapter tuning mở đường scale-up mô hình cho thị trường, không chỉ cho phòng lab.

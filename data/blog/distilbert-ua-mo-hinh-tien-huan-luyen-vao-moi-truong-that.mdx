@@ -1,0 +1,32 @@
+---
+title: 'DistilBERT – Đưa mô hình tiền huấn luyện vào môi trường thật'
+date: '2019-10-02'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '1. Nhu cầu thị trường 2019'
+---
+
+# DistilBERT – Đưa mô hình tiền huấn luyện vào môi trường thật
+
+1. Nhu cầu thị trường 2019
+BERT rất mạnh nhưng **quá chậm** để triển khai vào chatbot, mobile app. Hugging Face nghiên cứu DistilBERT để giải quyết đúng điểm nghẽn thương mại.
+
+2. Distillation: “ép kiến thức” từ mô hình lớn
+Ý tưởng: dùng output của BERT (teacher) để train mô hình nhỏ hơn (student).
+Kết quả:
+- **nhanh hơn ~60%**
+- **nhẹ hơn ~40%**
+- giữ **~97% hiệu năng**
+
+3. Kết quả ứng dụng
+DistilBERT giúp NLP:
+- chạy trên thiết bị biên
+- tích hợp vào sản phẩm doanh nghiệp
+- tối ưu trải nghiệm real-time
+
+4. Góc nhìn học thuật
+Thay vì cố gắng làm mô hình mạnh hơn trong benchmark,
+DistilBERT đặt câu hỏi: **bao nhiêu sức mạnh là đủ để có sản phẩm thật?**
+
+5. Kết luận
+Distillation trở thành **chuẩn hóa thực dụng** thời điểm đó.

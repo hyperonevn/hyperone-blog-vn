@@ -1,0 +1,20 @@
+---
+title: 'Hiểu mô hình để tin mô hình – Vấn đề giải thích trong NLP'
+date: '2018-11-05'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: 'Khi mô hình ngày càng lớn và phức tạp, chúng trở thành “hộp đen”. Trong năm 2018, cộng đồng nghiên c'
+---
+
+# Hiểu mô hình để tin mô hình – Vấn đề giải thích trong NLP
+
+Khi mô hình ngày càng lớn và phức tạp, chúng trở thành “hộp đen”. Trong năm 2018, cộng đồng nghiên cứu bắt đầu chú trọng **interpretability** — khả năng giải thích tại sao mô hình dự đoán như vậy.
+
+Các phương pháp phổ biến được thử nghiệm:
+– Attention visualization
+– Feature attribution (LIME, SHAP)
+– Phân rã độ quan trọng của token
+
+Nhưng thí nghiệm cho thấy attention **không phản ánh hoàn toàn suy luận nội bộ**: thay đổi attention đôi khi không làm thay đổi kết quả. Điều này dẫn đến tranh luận gay gắt: attention có thực sự là “lý do” của mô hình hay chỉ là một cơ chế tính toán?
+
+Năm 2018 là năm của những cảnh báo: nếu không giải thích được mô hình, con người khó kiểm chứng trách nhiệm và fairness trong ứng dụng quan trọng như y tế hoặc pháp lý.

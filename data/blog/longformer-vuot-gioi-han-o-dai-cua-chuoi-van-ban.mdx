@@ -1,0 +1,24 @@
+---
+title: 'Longformer – Vượt giới hạn độ dài của chuỗi văn bản'
+date: '2020-04-27'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '1. Vấn đề'
+---
+
+# Longformer – Vượt giới hạn độ dài của chuỗi văn bản
+
+1. Vấn đề
+Transformer truyền thống có độ phức tạp attention O(n²) → xử lý văn bản dài rất chậm. Nhiều tác vụ yêu cầu đọc tài liệu dài như luật, nghiên cứu khoa học cần giải pháp mới.
+
+2. Giải pháp của Longformer
+Sử dụng cơ chế sparse attention: bán kính chú ý cục bộ + global tokens cho vị trí quan trọng. Điều này giảm chi phí xuống gần O(n), cho phép xử lý văn bản dài hàng nghìn từ.
+
+3. Kết quả
+Longformer đạt hiệu quả tốt trong summarization và QA trên tài liệu dài, vượt BERT ở các tác vụ cần ngữ cảnh mở rộng.
+
+4. Hạn chế
+Cần thiết kế cẩn thận token global. Không phải tác vụ nào cũng hưởng lợi khi chuỗi ngắn.
+
+5. Ứng dụng
+Giải quyết bài toán tiền đề cho NLP chuyên sâu tài liệu dài, hợp pháp hóa, y tế, nghiên cứu.

@@ -1,0 +1,22 @@
+---
+title: 'T5 — Đồng nhất hóa mọi tác vụ NLP thành dạng văn bản sang văn bản'
+date: '2019-10-23'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: 'Cuối 2019, Google công bố T5 với triết lý: mọi bài toán NLP đều là chuyển đổi văn bản thành văn bản.'
+---
+
+# T5 — Đồng nhất hóa mọi tác vụ NLP thành dạng văn bản sang văn bản
+
+Cuối 2019, Google công bố T5 với triết lý: mọi bài toán NLP đều là chuyển đổi văn bản thành văn bản. Từ đó, chỉ cần một kiến trúc encoder-decoder thống nhất để làm:
+- Phân loại
+- Tóm tắt
+- Dịch thuật
+- Hỏi đáp
+- Suy luận logic đơn giản
+T5 được huấn luyện trên C4 (Colossal Clean Crawled Corpus) — dữ liệu web được lọc sạch hơn nhiều nguồn cũ.
+Hạn chế 2019:
+- Chi phí huấn luyện cực cao
+- Chưa giải được interpretability
+- Suy luận dài hạn còn yếu
+Ý nghĩa của T5: thay vì “mỗi bài toán, một kiến trúc”, T5 đưa NLP về một chuẩn thống nhất, mở đường cho thời đại prompt và foundation models.

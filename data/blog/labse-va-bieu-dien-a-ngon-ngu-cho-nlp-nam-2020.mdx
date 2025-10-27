@@ -1,0 +1,24 @@
+---
+title: 'LaBSE và biểu diễn đa ngôn ngữ cho NLP năm 2020'
+date: '2020-01-21'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '1. Bối cảnh'
+---
+
+# LaBSE và biểu diễn đa ngôn ngữ cho NLP năm 2020
+
+1. Bối cảnh
+Đầu 2020, transformer đã thống trị NLP đơn ngữ, đặc biệt tiếng Anh. Tuy nhiên nhu cầu triển khai toàn cầu cho chatbot, tìm kiếm, phân tích dữ liệu xã hội đòi hỏi mô hình có thể xử lý nhiều ngôn ngữ đồng thời. Các mô hình như BERT đa ngôn ngữ (mBERT) hoạt động được nhưng không tối ưu cho biểu diễn câu xuyên ngôn ngữ.
+
+2. Đóng góp của LaBSE
+LaBSE do Google công bố nhằm tạo embedding câu “phi ngôn ngữ” – cùng không gian vector cho hơn 100 ngôn ngữ. Sử dụng kiến trúc dual-encoder dựa trên Transformer: một encoder cho câu nguồn, một encoder cho câu đích tương đương trong tập dữ liệu dịch. Nhờ contrastive learning, mô hình học cách đưa các câu cùng nghĩa lại gần nhau dù khác ngôn ngữ.
+
+3. Kết quả 2020
+LaBSE đạt hiệu quả cao trong cross-lingual retrieval và semantic search. Nhiều thử nghiệm cho thấy mô hình vượt các embedding trước đó như LASER, đặc biệt ở ngôn ngữ không phải tiếng Anh. Khả năng zero-shot được đánh giá là mạnh nhất trong nhóm biểu diễn câu đa ngôn ở thời điểm này.
+
+4. Hạn chế
+Thiên lệch dữ liệu: ngôn ngữ ít tài nguyên vẫn gặp khó. Khả năng ứng dụng trong tác vụ downstream chưa mạnh bằng mô hình chuyên dụng. Chưa giải được vấn đề fairness và bias giữa các ngôn ngữ.
+
+5. Ý nghĩa
+LaBSE đánh dấu tư duy “NLP cho thế giới” thay vì chỉ cho tiếng Anh. Đây là bước chuẩn bị quan trọng cho các sản phẩm muốn mở rộng đa quốc gia.

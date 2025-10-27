@@ -1,0 +1,20 @@
+---
+title: 'Kiến trúc Transformer và khả năng mở rộng trong NLP'
+date: '2018-09-20'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: 'Transformer ra đời cuối 2017 nhưng đến 2018 mới thực sự chứng minh sức mạnh trong NLP khi được áp dụ'
+---
+
+# Kiến trúc Transformer và khả năng mở rộng trong NLP
+
+Transformer ra đời cuối 2017 nhưng đến 2018 mới thực sự chứng minh sức mạnh trong NLP khi được áp dụng cho tiền huấn luyện quy mô lớn. Cốt lõi của Transformer là cơ chế **self-attention**, cho phép mô hình đánh giá mối quan hệ giữa mọi từ trong câu **cùng lúc**, thay vì tuần tự như LSTM.
+
+Cơ chế multi-head attention giúp mô hình phân rã thông tin thành nhiều góc nhìn: ngữ nghĩa, cú pháp, mối liên hệ xa… Điều này giải quyết hạn chế lớn của RNN về việc ghi nhớ phụ thuộc xa. Ngoài ra, Transformer còn dễ song song hóa, phù hợp chạy trên GPU/TPU → mở rộng tham số mô hình lên hàng trăm triệu hoặc hàng tỷ.
+
+Hạn chế trong 2018 là:
+– Chưa tối ưu cho chuỗi rất dài (chi phí attention tăng bình phương)
+– Mô hình khó hiểu (interpretability kém)
+– Cần tiêu chuẩn hóa thêm để triển khai công nghiệp
+
+Transformer không chỉ mạnh hơn, mà còn **định hình lại toàn bộ pipeline NLP**, khiến cộng đồng chuyển từ RNN/LSTM sang kiến trúc attention-first.

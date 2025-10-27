@@ -1,0 +1,21 @@
+---
+title: 'BERT – Hiểu ngôn ngữ theo cả hai chiều'
+date: '2018-10-11'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: 'BERT (Bidirectional Encoder Representations from Transformers) được Google công bố cuối 2018 đã nhan'
+---
+
+# BERT – Hiểu ngôn ngữ theo cả hai chiều
+
+BERT (Bidirectional Encoder Representations from Transformers) được Google công bố cuối 2018 đã nhanh chóng trở thành chuẩn mực mới trong NLP. Trái với GPT chỉ nhìn ngữ cảnh bên trái, BERT học ngữ cảnh hai chiều cùng lúc thông qua nhiệm vụ **Masked Language Modeling**: che một số từ trong câu và yêu cầu mô hình dự đoán lại chúng dựa trên cả phần trước và sau.
+
+BERT được tiền huấn luyện trên hai nguồn dữ liệu lớn: Wikipedia và BookCorpus, từ đó mô hình thu nhận được kiến thức ngôn ngữ rộng. Sau khi tiền huấn luyện, BERT chỉ cần thêm một tầng phân loại ở đầu là có thể tinh chỉnh hiệu quả cho nhiều nhiệm vụ: hỏi đáp (SQuAD), phân loại cảm xúc, gán nhãn thực thể… Điểm số trên các benchmark lúc đó đều tăng vọt.
+
+Tuy nhiên, BERT cũng đối mặt với câu hỏi khó:
+– Việc đào tạo cần tài nguyên quá lớn (TPU)
+– Bộ dữ liệu tiền huấn luyện thiếu đa dạng, dễ mang thiên kiến
+– Khả năng giải thích vẫn còn hạn chế
+– Không được tối ưu cho sinh ngôn ngữ
+
+Dẫu còn tranh luận, BERT là cột mốc lịch sử khi đưa NLP sang kỷ nguyên **transfomer tiền huấn luyện hai chiều**, đặt nền cho hàng loạt mô hình mới hơn như RoBERTa, ALBERT…

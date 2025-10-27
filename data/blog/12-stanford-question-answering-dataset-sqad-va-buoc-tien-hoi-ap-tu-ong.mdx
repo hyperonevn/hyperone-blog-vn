@@ -1,0 +1,23 @@
+---
+title: '**12) Stanford Question Answering Dataset — SQAD và bước tiến hỏi đáp tự động**'
+date: '2019-02-10'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: 'Hệ thống hỏi đáp (QA) là một trong những bài toán thể hiện rõ nhất khả năng hiểu ngôn ngữ của AI. Đầ'
+---
+
+# **12) Stanford Question Answering Dataset — SQAD và bước tiến hỏi đáp tự động**
+
+Hệ thống hỏi đáp (QA) là một trong những bài toán thể hiện rõ nhất khả năng hiểu ngôn ngữ của AI. Đầu 2019, nhiều nghiên cứu tập trung vào bộ dữ liệu chuẩn SQuAD (Stanford Question Answering Dataset), đặc biệt SQuAD v2.0 — bổ sung câu hỏi **không có đáp án** để kiểm tra mô hình biết… **thừa nhận “không biết”**.
+
+Đây là tiến bộ quan trọng, vì trước đó nhiều mô hình “trả lời đại” ngay cả khi câu hỏi không liên quan. Học cách từ chối trả lời sai khó hơn nhiều so với tìm đúng đáp án.
+
+Các mô hình dựa trên Transformer như BERT lập tức tạo ra đột phá:
+– Dự đoán vị trí đáp án chuẩn xác hơn
+– Giảm trả lời sai có chủ đích
+– Hiệu suất vượt cả người anotator trong một số metric
+
+Tuy nhiên 2019 cũng đặt câu hỏi:
+Liệu “đúng vị trí đoạn văn” có đồng nghĩa với **hiểu thật**?
+
+Khi các bài test trở nên khó hơn (câu hỏi lắt léo, cần suy luận đa bước), mô hình còn yếu. Hướng nghiên cứu mới xuất hiện: **QA kết hợp reasoning**.

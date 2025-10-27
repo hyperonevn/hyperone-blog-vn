@@ -1,0 +1,21 @@
+---
+title: 'XLNet — Kết hợp tự hồi quy và tự mã hóa'
+date: '2019-06-19'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: 'Sau thành công của BERT, nhiều nghiên cứu chỉ ra hạn chế của masked language modeling: khi che token'
+---
+
+# XLNet — Kết hợp tự hồi quy và tự mã hóa
+
+Sau thành công của BERT, nhiều nghiên cứu chỉ ra hạn chế của masked language modeling: khi che token, mô hình không nhìn thấy quan hệ giữa token bị che và phần còn lại → học ngữ cảnh thiếu tự nhiên.
+XLNet ra đời:
+- Giữ tự hồi quy như GPT
+- Học hai chiều như BERT
+- Hoán vị thứ tự dự đoán token mỗi lần
+Cách tiếp cận này cho phép mô hình học mọi quan hệ giữa các từ trong câu mà không cần che token. XLNet vượt BERT trên nhiều benchmark: GLUE, SQuAD, RACE…
+Nhưng tại thời điểm 2019:
+- Huấn luyện phức tạp
+- Đòi hỏi compute lớn
+- Suy luận chậm cho chuỗi dài
+Dẫu vậy, XLNet chứng minh BERT chưa phải giới hạn cuối cùng của NLP và mở đường các mô hình tiền huấn luyện đa dạng hơn.

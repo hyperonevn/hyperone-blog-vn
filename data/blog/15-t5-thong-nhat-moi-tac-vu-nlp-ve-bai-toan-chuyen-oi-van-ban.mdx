@@ -1,0 +1,30 @@
+---
+title: '**15) T5 — Thống nhất mọi tác vụ NLP về bài toán chuyển đổi văn bản**'
+date: '2019-10-23'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: 'Cuối 2019, mô hình T5 (Text-To-Text Transfer Transformer) đến từ Google đưa ra một triết lý cực kỳ t'
+---
+
+# **15) T5 — Thống nhất mọi tác vụ NLP về bài toán chuyển đổi văn bản**
+
+Cuối 2019, mô hình T5 (Text-To-Text Transfer Transformer) đến từ Google đưa ra một triết lý cực kỳ thanh thoát:
+
+> “Mọi tác vụ NLP đều là chuyển đổi một đoạn văn bản thành một đoạn văn bản khác.”
+
+Thay vì thiết kế mô hình riêng cho từng nhiệm vụ, T5 thống nhất pipeline bằng một kiến trúc duy nhất: **transformer encoder-decoder**. Chỉ cần thay đổi **dữ liệu huấn luyện** và **chuỗi hướng dẫn (prompt)** là mô hình có thể thực hiện:
+
+– Tóm tắt văn bản
+– Dịch thuật
+– Phân loại
+– Hỏi đáp
+– Thậm chí suy luận logic ở mức đơn giản
+
+Điểm đáng chú ý: T5 dùng **Colossal Clean Crawled Corpus (C4)** — dữ liệu web được lọc sạch hơn so với các bộ dữ liệu cũ.
+
+Dù cực mạnh, T5 2019 vẫn có hạn chế:
+– Huấn luyện cực đắt đỏ
+– Vẫn chưa đảm bảo tính minh bạch và trách nhiệm
+– Suy luận dài hạn còn hạn chế
+
+T5 cho thấy một tương lai nơi **chỉ một mô hình duy nhất có thể giải quyết mọi bài toán NLP** — ý tưởng từng bị xem là hoang đường.

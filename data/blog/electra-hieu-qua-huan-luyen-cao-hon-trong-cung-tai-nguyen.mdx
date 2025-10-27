@@ -1,0 +1,30 @@
+---
+title: 'ELECTRA – Hiệu quả huấn luyện cao hơn trong cùng tài nguyên'
+date: '2019-12-17'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '1. Ý tưởng mới năm 2019'
+---
+
+# ELECTRA – Hiệu quả huấn luyện cao hơn trong cùng tài nguyên
+
+1. Ý tưởng mới năm 2019
+ELECTRA đặt câu hỏi:
+> Tại sao ta chỉ học từ token bị che, trong khi phần lớn token bị bỏ phí?
+
+Thay vì dự đoán token bị mask, ELECTRA:
+- **Generator** tạo token thay thế
+- **Discriminator** học phân biệt “thật hay giả”
+→ Học từ **100% token**, hiệu quả vượt xa masked LM.
+
+2. Kết quả 2019
+- Mô hình **nhỏ** đạt kết quả tương tự mô hình **lớn** trong cùng tài nguyên
+- Điểm GLUE tăng đáng kể trong budget thấp
+
+3. Hạn chế
+- Đào tạo phức tạp hơn
+- Nhạy cảm với lỗi của Generator
+- Sinh ngôn ngữ kém GPT-2
+
+4. Tác động
+ELECTRA đặt trọng tâm vào hiệu năng thực tế hơn benchmark → quan điểm đúng đắn cho ứng dụng công nghiệp.

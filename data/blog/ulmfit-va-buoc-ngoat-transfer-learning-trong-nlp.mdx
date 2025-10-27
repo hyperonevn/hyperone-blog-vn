@@ -1,0 +1,19 @@
+---
+title: 'ULMFiT và bước ngoặt transfer learning trong NLP'
+date: '2018-03-01'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: 'Trước năm 2018, NLP gặp nút thắt lớn: mỗi tác vụ phải xây mô hình từ đầu. Điều này dẫn đến lãng phí '
+---
+
+# ULMFiT và bước ngoặt transfer learning trong NLP
+
+Trước năm 2018, NLP gặp nút thắt lớn: mỗi tác vụ phải xây mô hình từ đầu. Điều này dẫn đến lãng phí tài nguyên và khó mở rộng sang các lĩnh vực mới — đặc biệt với ngôn ngữ ít dữ liệu. Thị giác máy tính đã vượt qua vấn đề này bằng transfer learning, nhưng NLP vẫn loay hoay.
+
+ULMFiT (Universal Language Model Fine-tuning) thay đổi cục diện. Khái niệm tưởng đơn giản: huấn luyện trước một mô hình ngôn ngữ tổng quát, rồi tinh chỉnh theo từng miền dữ liệu, và cuối cùng tinh chỉnh theo tác vụ cụ thể như phân loại cảm xúc hay phát hiện chủ đề. Bất ngờ lớn là hiệu quả vượt xa kỳ vọng: mô hình tinh gọn như LSTM nhưng lại đánh bại nhiều kiến trúc phức tạp hơn.
+
+Nghiên cứu chỉ ra ba điểm chính giúp thành công: đầu tiên là học trước khối lượng lớn dữ liệu, giúp mô hình có hiểu biết chung về ngôn ngữ. Thứ hai là discriminative fine-tuning — tinh chỉnh mỗi tầng với tốc độ học khác nhau. Và cuối cùng là slanted triangular learning rate — tối ưu tốc độ học theo chu trình thông minh.
+
+Tuy nhiên, hạn chế ở 2018 vẫn còn: kiến trúc tuần tự LSTM khó song song hóa, tốc độ bị bó hẹp. Công nghệ NLP vẫn thiếu cơ chế attention mạnh để nắm bắt phụ thuộc xa hiệu quả. Ngoài ra, dataset tiền huấn luyện chưa đủ đa dạng nên vẫn có rủi ro thiên kiến.
+
+ULMFiT không phải điểm đến cuối, nhưng là bước chuyển rõ rệt từ “mỗi nhiệm vụ một mô hình” sang kỷ nguyên “một mô hình – tùy biến cho nhiều việc”. Đây chính là nền móng dẫn đường cho GPT và BERT sau này.

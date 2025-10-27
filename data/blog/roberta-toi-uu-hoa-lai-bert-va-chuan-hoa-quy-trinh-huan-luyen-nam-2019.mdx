@@ -1,0 +1,37 @@
+---
+title: 'RoBERTa – Tối ưu hóa lại BERT và chuẩn hóa quy trình huấn luyện năm 2019'
+date: '2019-07-26'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '1. Bối cảnh nghiên cứu 2019'
+---
+
+# RoBERTa – Tối ưu hóa lại BERT và chuẩn hóa quy trình huấn luyện năm 2019
+
+1. Bối cảnh nghiên cứu 2019
+Sau thành công của BERT, cộng đồng NLP nhanh chóng nhận ra rằng hiệu quả của mô hình bị ảnh hưởng lớn bởi các lựa chọn kỹ thuật trong huấn luyện: cỡ batch, thời lượng train, cấu trúc dữ liệu… BERT được train trong điều kiện hạn chế tài nguyên và thiếu tối ưu hóa chuẩn mực. Nhiều nhà nghiên cứu đặt câu hỏi: liệu Transformer đã phát huy hết tiềm năng hay chưa?
+
+2. Điều chỉnh phương pháp huấn luyện của BERT
+Facebook AI đề xuất RoBERTa – một phiên bản cải thiện toàn diện pipeline huấn luyện:
+- Gấp **10 lần dữ liệu** Wikipedia + BookCorpus + CommonCrawl
+- **Batch size lớn hơn nhiều**
+- **Training lâu hơn đáng kể**
+- **Loại bỏ nhiệm vụ NSP** (vì gây nhiễu)
+- **Dynamic masking** thay vì cố định lúc tạo dữ liệu
+RoBERTa không thay kiến trúc, chỉ đơn giản “huấn luyện đúng”, nhưng hiệu quả tăng vượt bậc.
+
+3. Kết quả benchmark năm 2019
+Trên GLUE, RACE và SQuAD:
+- Điểm GLUE vượt BERT 3–5%
+- RACE (đọc hiểu đa lựa chọn) tăng mạnh
+- SQuAD: cải thiện cả EM & F1
+Kết luận quan trọng: **BERT không phải giới hạn kiến trúc, mà giới hạn do cách huấn luyện.**
+
+4. Thảo luận học thuật lúc đó
+Nhiều chuyên gia bắt đầu tranh luận liệu năng lực NLP chủ yếu đến từ:
+A) **dữ liệu và compute lớn hơn**
+B) hay **cải tiến mô hình thực sự**?
+RoBERTa khiến cuộc đua tài nguyên bùng nổ.
+
+5. Tác động đến hệ sinh thái
+RoBERTa chuẩn hóa training pipeline → các mô hình sau này (T5, ELECTRA, DeBERTa) tiếp tục dựa trên nguyên tắc tối ưu đó.

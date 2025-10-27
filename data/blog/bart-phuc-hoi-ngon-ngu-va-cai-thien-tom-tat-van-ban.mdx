@@ -1,0 +1,24 @@
+---
+title: 'BART – Phục hồi ngôn ngữ và cải thiện tóm tắt văn bản'
+date: '2020-03-05'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '1. Bối cảnh'
+---
+
+# BART – Phục hồi ngôn ngữ và cải thiện tóm tắt văn bản
+
+1. Bối cảnh
+BERT mạnh ở hiểu nhưng yếu sinh; GPT sinh tốt nhưng hiểu yếu. Facebook AI giới thiệu BART để hòa trộn hai khả năng này.
+
+2. Phương pháp
+BART dùng kiến trúc encoder-decoder: encoder học hiểu, decoder sinh văn bản tự nhiên. Chiến lược noising input (xáo trộn, xóa từ) giúp mô hình học cách phục hồi meaning từ văn bản hư hỏng → gần với thực tế dữ liệu.
+
+3. Kết quả nổi bật 2020
+BART đạt top trong tóm tắt abstractive và khử nhiễu văn bản. Với fine-tuning trên CNN/DailyMail, điểm ROUGE vượt nhiều mô hình trước đó. Chất lượng sinh nội dung tự nhiên hơn GPT cùng thời điểm trong ngữ cảnh có giới hạn.
+
+4. Hạn chế
+Huấn luyện encoder-decoder đắt đỏ hơn decoder-only. Mô hình vẫn nhầm lẫn khi tóm tắt yêu cầu reasoning sâu.
+
+5. Tác động
+BART mở đường cải thiện chất lượng tóm tắt, chỉnh sửa văn bản trên quy mô lớn, hỗ trợ nhiều ứng dụng báo chí & quản lý tri thức.

@@ -1,0 +1,24 @@
+---
+title: 'T5 và triết lý hợp nhất mọi tác vụ NLP thành chuyển đổi văn bản'
+date: '2020-02-10'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '1. Quan điểm mới'
+---
+
+# T5 và triết lý hợp nhất mọi tác vụ NLP thành chuyển đổi văn bản
+
+1. Quan điểm mới
+Từ trước 2020, NLP chia nhỏ thành hàng loạt tác vụ: phân loại, dịch thuật, hỏi đáp, tóm tắt… mỗi tác vụ 1 kiến trúc. T5 của Google đưa ra triết lý: “Everything is text-to-text.” Mọi vấn đề đều là chuyển đổi văn bản sang văn bản.
+
+2. Kiến trúc và dữ liệu
+T5 sử dụng Transformer encoder-decoder với quy mô lớn, huấn luyện trên C4 – tập dữ liệu web được lọc sạch. Mỗi nhiệm vụ chỉ thay đổi prompt: ví dụ “translate English to German: …”, hay “summarize: …”. Điều này giúp chỉ cần 1 mô hình cho toàn bộ hệ thống NLP.
+
+3. Thành quả 2020
+T5 đạt top trên nhiều benchmark như GLUE, SQuAD khi fine-tune, gần như “thống nhất” khả năng NLP thịnh hành. Sức mạnh đến từ quy mô dữ liệu lớn và việc mô hình hóa nhiều dạng nhiệm vụ trong cùng không gian.
+
+4. Thảo luận
+Chi phí tính toán khổng lồ là rào cản. Tính giải thích của mô hình chưa cải thiện. Tuy nhiên chiến lược thống nhất giúp giảm độ phức tạp hệ thống.
+
+5. Ý nghĩa
+T5 trở thành nền móng tư duy cho thời đại prompt và mô hình dùng chung đa nhiệm về sau.
