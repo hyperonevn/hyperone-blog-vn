@@ -1,0 +1,44 @@
+---
+title: 'December 2017 – Khả năng tổng hợp ngữ nghĩa với Self-Attention: Đánh giá thận trọng'
+date: '2017-12-27'
+tags: ['AI', 'CÔNG-NGHỆ']
+draft: false
+summary: 'Self-attention bước đầu cho thấy khả năng học mối quan hệ nội tại xa trong ngôn ngữ, nhưng vẫn cần kiểm chứng trên các tập dữ liệu và tác vụ đa dạng hơn.'
+---
+
+## 1. Động lực nghiên cứu
+
+Các mô hình xử lý ngôn ngữ truyền thống dựa mạnh vào biểu diễn tuần tự.  
+Điều này gây khó khăn cho việc nắm bắt phụ thuộc dài hạn, nhất là trong ngôn ngữ tự nhiên phức tạp.
+
+Self-attention được kỳ vọng sẽ:
+- giảm lệ thuộc cấu trúc tuần tự,
+- nhấn mạnh quan hệ ngữ nghĩa hơn thứ tự bề mặt.
+
+---
+
+## 2. Quan sát thực nghiệm
+
+Trong các thử nghiệm hiện tại về dịch máy:
+- Self-attention thể hiện khả năng phát hiện điểm kết nối giữa các thành tố xa nhau
+- Độ dài câu tăng ít ảnh hưởng đến chất lượng mô hình hơn mong đợi
+
+Tuy nhiên, các cơ sở lý thuyết về **vì sao** điều này hiệu quả vẫn chưa hoàn toàn minh bạch.
+
+---
+
+## 3. Giới hạn nhận thức thời điểm này
+
+- Chưa biết liệu mô hình có thể duy trì tính ổn định khi tăng rất lớn tham số
+- Chưa rõ cơ chế attention có thể đại diện chính xác cấu trúc ngữ pháp không
+- Cần đánh giá tác động sai lệch dữ liệu trên attention weights
+
+---
+
+## 4. Kết luận
+
+Self-attention có thể là một công cụ bổ trợ mạnh mẽ  
+nhưng **đang trong giai đoạn thử nghiệm** với phạm vi hẹp.
+
+Cộng đồng nghiên cứu cần tiếp tục tìm hiểu  
+trước khi xem đây là hướng thay thế chủ đạo cho mô hình tuần tự.
