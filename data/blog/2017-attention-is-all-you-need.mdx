@@ -1,0 +1,67 @@
+---
+title: '2017 – Attention Is All You Need: Bước ngoặt tư duy trong xử lý ngôn ngữ tự nhiên'
+date: '2017-06-15'
+tags: ['AI', 'CÔNG-NGHỆ']
+draft: false
+summary: 'Attention Is All You Need đã tái định nghĩa cách mô hình học sâu hiểu và sinh ngôn ngữ, đặt nền tảng cho làn sóng Generative AI hiện đại.'
+---
+
+## 1. Bối cảnh tiền-Transformer: giới hạn từ cấu trúc tuần tự
+
+Trước năm 2017, phần lớn mô hình NLP dựa trên RNN, LSTM và GRU.  
+Chúng có ưu điểm về xử lý chuỗi nhưng chịu hai hạn chế:
+
+- Mối phụ thuộc xa trong ngôn ngữ khó được bảo toàn
+- Tính tuần tự khiến việc huấn luyện không tận dụng được khả năng song song của GPU
+
+Điều này làm chậm tiến độ nghiên cứu, giới hạn khả năng mở rộng ngữ liệu.
+
+---
+
+## 2. Attention: cơ chế học mối quan hệ nội tại của ngôn ngữ
+
+Công trình của Vaswani và cộng sự đề xuất **chú ý tự thân** (self-attention),  
+giúp mô hình “nhìn” toàn bộ chuỗi thông tin cùng lúc,  
+đồng thời đánh trọng số cho các quan hệ ngữ nghĩa quan trọng.
+
+Ngôn ngữ không chỉ là chuỗi ký tự →  
+mà là **mạng lưới phụ thuộc phức tạp cần được mã hóa theo cấu trúc liên kết**.
+
+---
+
+## 3. Khả năng song song hóa và hệ quả quy mô
+
+Self-attention cho phép:
+- Tối ưu hóa tính toán trên GPU
+- Mở rộng kích thước mô hình theo tham số khổng lồ
+
+Càng lớn → càng học được tri thức trừu tượng sâu hơn.
+
+Đây là bước chuyển từ:
+**“học theo cú pháp” → “học theo nhận thức”** trong máy tính.
+
+---
+
+## 4. Ảnh hưởng đối với NLP và AI hiện đại
+
+Transformer không chỉ là một kiến trúc,
+mà là **khởi nguyên của thế hệ mô hình có khả năng sinh nội dung mới**.
+
+Từ đây, khái niệm “ngôn ngữ” trở thành:
+- dữ liệu
+- giao diện
+- nền tảng tri thức chung cho máy học
+
+NLP chuyển từ nhận dạng → **tư duy sinh tạo** (generative reasoning).
+
+---
+
+## 5. Kết luận
+
+Attention Is All You Need là mốc lịch sử,
+không chỉ vì kết quả thực nghiệm vượt trội,
+mà vì nó đặt lại câu hỏi:
+
+> Máy tính mô hình hóa ngôn ngữ như thế nào?
+
+Câu hỏi đó chính là cánh cửa của GenAI hiện đại.
