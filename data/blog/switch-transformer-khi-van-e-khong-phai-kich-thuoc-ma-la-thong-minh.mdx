@@ -1,0 +1,15 @@
+---
+title: 'Switch Transformer – Khi vấn đề không phải kích thước, mà là… thông minh'
+date: '2021-01-11'
+tags: ['AI', 'NLP', '2018']
+draft: false
+summary: '2021 chứng kiến một sự thật không dễ chấp nhận: mô hình càng lớn càng mạnh, nhưng chi phí huấn luyện'
+---
+
+# Switch Transformer – Khi vấn đề không phải kích thước, mà là… thông minh
+
+2021 chứng kiến một sự thật không dễ chấp nhận: mô hình càng lớn càng mạnh, nhưng chi phí huấn luyện tăng theo cấp số nhân. Google đưa ra Switch Transformer với tư duy mới: “Không phải lúc nào cũng cần tất cả neuron hoạt động.”
+
+Thay vì kích hoạt toàn bộ tham số mỗi lần dự đoán, Switch routing chọn **một số chuyên gia** (experts) phù hợp để xử lý từng token. Giống như trong một công ty, không nhất thiết phải triệu tập cả phòng ban chỉ để trả lời một email. Cơ chế này giúp Switch Transformer mở rộng quy mô tham số lên hàng **nghìn tỷ** về mặt lý thuyết, trong khi chi phí suy luận lại thấp hơn nhiều.
+
+Câu chuyện ở đây không phải “càng to càng tốt”, mà là “đúng người đúng việc”. 2021 vẫn còn nhiều tranh cãi về độ ổn định của cơ chế routing và fairness giữa các experts, nhưng Switch Transformer đặt nền cho một triết lý mới: **đi xa bằng tổ chức thông minh, không phải bằng bạo lực tài nguyên**.
